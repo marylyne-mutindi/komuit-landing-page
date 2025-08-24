@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komuit - Smart Transit Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/download.png" alt="Komuit Logo" class="logo-img">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn btn-outline">Login</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles"></div>
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="hero-badge" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-rocket"></i>
+                    <span>Smart Transit Revolution</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-gradient">Transform Your</span><br>
+                    <span class="title-highlight">Commute Experience</span>
+                </h1>
+                <p class="hero-description">
+                    Experience the future of public transportation with Komuit's AI-powered platform. 
+                    Seamlessly connecting passengers, operators, and investors in one intelligent ecosystem. 
+                    <strong>Book, Pay, Track, and Commute with Ultimate Ease.</strong>
+                </p>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                        <span class="stat-number">1000</span>
+                        <span class="stat-label">Daily Users</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Routes</span>
+                    </div>
+                    <!-- <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Cities</span>
+                    </div> -->
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large btn-glow">
+                        <i class="fas fa-play"></i>
+                        Start Your Journey
+                    </button>
+                    <button class="btn btn-glass btn-large">
+                        <i class="fas fa-video"></i>
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+            <div class="hero-animation" data-aos="fade-left">
+                <div class="animation-container">
+                    <div class="floating-elements">
+                        <div class="float-icon float-1"><i class="fas fa-bell"></i></div>
+                        <div class="float-icon float-2"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="float-icon float-3"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="float-icon float-4"><i class="fas fa-qrcode"></i></div>
+                    </div>
+                    <!-- Story Animation -->
+                    <div class="story-step active" id="step1">
+                        <div class="story-icon-wrapper">
+                            <i class="fas fa-mobile-alt story-icon"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <p>Smart Booking</p>
+                    </div>
+                    <div class="story-step" id="step2">
+                        <div class="story-icon-wrapper">
+                            <i class="fas fa-qrcode story-icon"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <p>Instant Payment</p>
+                    </div>
+                    <div class="story-step" id="step3">
+                        <div class="story-icon-wrapper">
+                            <i class="fas fa-bus story-icon"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <p>Live Tracking</p>
+                    </div>
+                    <div class="story-step" id="step4">
+                        <div class="story-icon-wrapper">
+                            <i class="fas fa-chart-line story-icon"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <p>Smart Analytics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator" data-aos="fade-up" data-aos-delay="800">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <span>Discover More</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="section-badge" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-info-circle"></i>
+                    About Komuit
+                </div>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                    Revolutionizing <span class="text-gradient">Urban Transportation</span>
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="300">
+Connecting communities through smart, sustainable, and accessible transportation solutions, in collaboration with <span class="text-gradient highlight-special">NCBA</span>                </p>
+            </div>
+
+            <!-- Two Column Layout -->
+            <div class="about-main-content">
+                <!-- Left Column - Animations -->
+                <div class="about-animations" data-aos="fade-right" data-aos-delay="400">
+                    <div class="animation-showcase">
+                        <!-- Journey Animation -->
+                        <div class="journey-animation">
+                            <div class="journey-step active" data-step="1">
+                                <div class="step-circle">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="step-label">Book Ride</div>
+                            </div>
+                            <div class="journey-step" data-step="2">
+                                <div class="step-circle">
+                                    <i class="fas fa-search-location"></i>
+                                </div>
+                                <div class="step-label">Find Transport</div>
+                            </div>
+                            <div class="journey-step" data-step="3">
+                                <div class="step-circle">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <div class="step-label">Track Journey</div>
+                            </div>
+                            <div class="journey-step" data-step="4">
+                                <div class="step-circle">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="step-label">Arrive Safely</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Stats -->
+                        <div class="floating-stats">
+                            <div class="stat-bubble bubble-1">
+                                <span class="stat-number">10K+</span>
+                                <span class="stat-text">Active Users</span>
+                            </div>
+                            <div class="stat-bubble bubble-2">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-text">Cities</span>
+                            </div>
+                            <div class="stat-bubble bubble-3">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-text">Support</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Icons -->
+                        <div class="floating-icons">
+                            <div class="float-icon icon-1">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="float-icon icon-2">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="float-icon icon-3">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="float-icon icon-4">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="float-icon icon-5">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="float-icon icon-6">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Details -->
+                <!-- <div class="about-details" data-aos="fade-left" data-aos-delay="500">
+                    <div class="details-content">
+                        <h3 class="about-title">Smart Transportation for Modern Cities</h3>
+                        
+                        <div class="about-description">
+                            <p class="lead-text">
+                                Komuit connects communities through innovative transportation solutions that are accessible, sustainable, and reliable.
+                            </p>
+                            <p class="description-text">
+                                Our platform brings together passengers and operators, creating seamless journeys while reducing environmental impact and building stronger communities.
+                            </p>
+                        </div>
+
+                        <!-- Key Features -->
+                        <div class="key-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Easy Booking</h5>
+                                    <p>Book and track rides instantly with our intuitive mobile app.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Eco-Friendly</h5>
+                                    <p>Choose sustainable transportation options to reduce your carbon footprint.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Community-Focused</h5>
+                                    <p>Building stronger connections between people and places.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <!-- <div class="about-cta">
+                            <a href="#" class="btn btn-primary">Get Started</a>
+                            <a href="#contact" class="btn btn-outline">Learn More</a>
+                        </div> -->
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Statement Section -->
+    <section class="mission-section">
+        <div class="mission-background">
+            <div class="mission-particles"></div>
+            <div class="mission-waves"></div>
+        </div>
+        
+        <div class="container">
+            <div class="mission-content" data-aos="fade-up">
+                <div class="mission-header">
+                    <div class="mission-badge">
+                        <i class="fas fa-heart"></i>
+                        <span>Our Mission</span>
+                    </div>
+                    <h2 class="mission-title">Driving the Future of <span class="text-gradient">Urban Mobility</span></h2>
+                </div>
+                
+                <div class="mission-quote-container">
+                    <div class="mission-quote-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="quote-decoration">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <blockquote class="mission-quote-text">
+                            "Creating accessible, sustainable, and seamless urban mobility for everyone through innovative technology that connects communities and transforms lives."
+                        </blockquote>
+                        <div class="mission-signature">
+                            <div class="signature-line"></div>
+                            <div class="signature-info">
+                                <strong>The Komuit Team</strong>
+                                <span>Founders & Innovators</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mission-values" data-aos="fade-up" data-aos-delay="400">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-globe-africa"></i>
+                        </div>
+                        <h4>Accessibility</h4>
+                        <p>Making transportation available to everyone, everywhere</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Sustainability</h4>
+                        <p>Building eco-friendly solutions for a greener future</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Innovation</h4>
+                        <p>Pioneering technology that transforms urban mobility</p>
+                    </div>
+                </div>
+                
+                <div class="mission-cta" data-aos="fade-up" data-aos-delay="600">
+                    <button class="btn btn-mission">
+                        <i class="fas fa-hands-helping"></i>
+                        Join Our Mission
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Features by User Type</h2>
+                <p>Komuit serves every stakeholder in the transit ecosystem</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon passenger">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Passengers</h3>
+                    <p>Book tickets, track buses in real-time, make contactless payments, and enjoy a seamless travel experience.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon conductor">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Conductor/Admin</h3>
+                    <p>Manage routes, validate tickets, monitor passenger flow, and access comprehensive operational tools.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon investor">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Investors</h3>
+                    <p>Access detailed analytics, revenue reports, market insights, and ROI tracking for informed decisions.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon technology">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Technology</h3>
+                    <p>AI-powered route optimization, IoT integration, cloud infrastructure, and cutting-edge security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Services</h2>
+                <p>Comprehensive solutions for modern transportation needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Booking</h3>
+                    <p>Easy-to-use mobile app for booking tickets, selecting seats, and managing your travel plans on the go.</p>
+                    <ul class="service-features">
+                        <li>Real-time seat availability</li>
+                        <li>Multiple payment options</li>
+                        <li>Instant booking confirmation</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Route Management</h3>
+                    <p>Advanced route planning and optimization system for efficient transportation network management.</p>
+                    <ul class="service-features">
+                        <li>AI-powered route optimization</li>
+                        <li>Traffic pattern analysis</li>
+                        <li>Dynamic scheduling</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Payments</h3>
+                    <p>Multiple secure payment methods including digital wallets, QR codes, and contactless transactions.</p>
+                    <ul class="service-features">
+                        <li>End-to-end encryption</li>
+                        <li>Multiple payment gateways</li>
+                        <li>Fraud detection system</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Comprehensive analytics and reporting tools for data-driven decision making and business insights.</p>
+                    <ul class="service-features">
+                        <li>Real-time performance metrics</li>
+                        <li>Revenue tracking</li>
+                        <li>Custom report generation</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support through multiple channels to ensure smooth operations.</p>
+                    <ul class="service-features">
+                        <li>Multi-channel support</li>
+                        <li>Live chat assistance</li>
+                        <li>Technical troubleshooting</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>IoT Integration</h3>
+                    <p>Smart IoT devices integration for real-time vehicle tracking, monitoring, and maintenance alerts.</p>
+                    <ul class="service-features">
+                        <li>GPS tracking system</li>
+                        <li>Vehicle health monitoring</li>
+                        <li>Predictive maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>How It Works</h2>
+                <p>Simple steps to transform your transit experience</p>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>1. Book</h3>
+                        <p>Select your route and book your seat through our mobile app or web platform.</p>
+                    </div>
+                </div>
+                <div class="step-arrow" data-aos="fade-in" data-aos-delay="150">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>2. Pay</h3>
+                        <p>Make secure payments using QR codes, mobile wallets, or integrated payment systems.</p>
+                    </div>
+                </div>
+                <div class="step-arrow" data-aos="fade-in" data-aos-delay="250">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="step-icon">
+                        <i class="fas fa-bus-alt"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>3. Board</h3>
+                        <p>Board your bus using digital tickets and enjoy a contactless boarding experience.</p>
+                    </div>
+                </div>
+                <div class="step-arrow" data-aos="fade-in" data-aos-delay="350">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="step-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>4. Track</h3>
+                        <p>Monitor your journey in real-time and receive updates about your trip status.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Trusted by <span class="text-gradient">Thousands</span></h2>
+                <p class="section-subtitle">Real stories from our community of passengers, drivers, and administrators</p>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="testimonials-slider" data-aos="fade-up">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Komuit has completely transformed my daily commute. The real-time tracking and cashless payments make traveling so much more convenient. I can plan my day better knowing exactly when my bus will arrive."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://via.placeholder.com/60x60/663399/ffffff?text=SM" alt="Sarah M.">
+                                </div>
+                                <div class="author-info">
+                                    <h5>Sarah Mitchell</h5>
+                                    <span>Daily Commuter, Lagos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"As a bus conductor, Komuit has made my job so much easier. The digital ticketing system reduces errors, and the passenger management tools help me provide better service. Revenue tracking is now automated!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://via.placeholder.com/60x60/FFD700/663399?text=JA" alt="James A.">
+                                </div>
+                                <div class="author-info">
+                                    <h5>James Adebayo</h5>
+                                    <span>Bus Conductor, Abuja</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The analytics dashboard gives us incredible insights into our transit operations. We've improved efficiency by 40% and passenger satisfaction has never been higher. Komuit is the future of public transport."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://via.placeholder.com/60x60/663399/ffffff?text=MO" alt="Maria O.">
+                                </div>
+                                <div class="author-info">
+                                    <h5>Maria Okafor</h5>
+                                    <span>Transport Administrator, Port Harcourt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-navigation">
+                    <button class="nav-btn prev-btn" onclick="changeTestimonial(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonials-dots">
+                        <span class="dot active" onclick="currentTestimonial(1)"></span>
+                        <span class="dot" onclick="currentTestimonial(2)"></span>
+                        <span class="dot" onclick="currentTestimonial(3)"></span>
+                    </div>
+                    <button class="nav-btn next-btn" onclick="changeTestimonial(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="trust-indicators" data-aos="fade-up">
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="trust-content">
+                        <h4>Award Winning</h4>
+                        <p>Best Transport Innovation 2024</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="trust-content">
+                        <h4>Secure & Safe</h4>
+                        <p>ISO 27001 Certified Security</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <div class="trust-content">
+                        <h4>Locally Built</h4>
+                        <p>Made for African Communities</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="trust-content">
+                        <h4>24/7 Support</h4>
+                        <p>Always here to help you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <div class="cta-badge">
+                    <i class="fas fa-rocket"></i>
+                    Ready to Transform Your Commute?
+                </div>
+                <h2 class="cta-title">Join the <span class="text-gradient">Transportation Revolution</span></h2>
+                <p class="cta-description">Experience the future of public transport with Komuit. Download our app and start your journey towards smarter, safer, and more convenient travel today.</p>
+                
+                <div class="download-buttons" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#" class="download-btn ios-btn">
+                        <div class="btn-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <div class="btn-text">
+                            <span class="btn-small">Download on the</span>
+                            <span class="btn-large">App Store</span>
+                        </div>
+                    </a>
+                    <a href="#" class="download-btn android-btn">
+                        <div class="btn-icon">
+                            <i class="fab fa-google-play"></i>
+                        </div>
+                        <div class="btn-text">
+                            <span class="btn-small">Get it on</span>
+                            <span class="btn-large">Google Play</span>
+                        </div>
+                    </a>
+                    <a href="#" class="download-btn web-btn">
+                        <div class="btn-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="btn-text">
+                            <span class="btn-small">Access via</span>
+                            <span class="btn-large">Web App</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="cta-features" data-aos="fade-up" data-aos-delay="400">
+                    <div class="cta-feature">
+                        <i class="fas fa-download"></i>
+                        <span>Free Download</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure & Safe</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 Available</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-users"></i>
+                        <span>Growing Community</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-visual" data-aos="fade-left" data-aos-delay="300">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <img src="assets/images/mockup image.jpg" alt="Komuit Mobile App" class="app-screenshot">
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="float-element element-1">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="float-element element-2">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="float-element element-3">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <!-- Floating Elements -->
+        <div class="contact-floating-elements">
+            <div class="contact-float-element element-1">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-float-element element-2">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-float-element element-3">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to transform your transit experience? Contact us to learn more about Komuit and how we can revolutionize your daily commute.</p>
+                    
+                    <div class="contact-buttons">
+                        <button class="btn btn-primary btn-large">
+                            <i class="fas fa-rocket"></i>
+                            Sign Up Now
+                        </button>
+                        <button class="btn btn-outline btn-large">
+                            <i class="fas fa-users"></i>
+                            Contact Team
+                        </button>
+                    </div>
+                    
+                    <!-- Contact Info Cards -->
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>Email Us</h4>
+                            <p>info@komuit.com<br>support@komuit.com</p>
+                        </div>
+                        
+                        <div class="contact-info-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h4>Call Us</h4>
+                            <p>+254702123456<br>24/7 Support Available</p>
+                        </div>
+                        
+                        <div class="contact-info-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Visit Us</h4>
+                            <p>Nairobi, Kenya<br>Nairobi</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this about?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us more about your inquiry..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/images/download.png" alt="Komuit Logo" class="footer-logo">
+                    <p>Smart transit platform connecting everyone in the transportation ecosystem.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@komuit.com</li>
+                        <li><i class="fas fa-phone"></i> +254 112462664</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Komuit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
